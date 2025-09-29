@@ -7,6 +7,7 @@ st_autorefresh(interval=5000, key="refresh")
 
 
 st.set_page_config(page_title="Two-Person Chat", layout="centered")
+st.title("💬 Two-Person Chat")
 
 chat_file = "chat_history.txt"
 
@@ -32,10 +33,6 @@ def add_message():
                 f.write(m + "\n")
         st.session_state.user_input = ""  # Clear input field after submit
         load_chat()
-
-
-
-st.title("💬 Two-Person Chat")
 
 if "messages" not in st.session_state:
     if os.path.exists(chat_file):
