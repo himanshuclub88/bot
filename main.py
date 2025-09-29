@@ -32,7 +32,7 @@ def add_message():
             for m in st.session_state.messages:
                 f.write(m + "\n")
         st.session_state.user_input = ""  # Clear input field after submit
-        load_chat()
+        
 
 if "messages" not in st.session_state:
     if os.path.exists(chat_file):
