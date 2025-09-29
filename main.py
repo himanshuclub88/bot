@@ -1,5 +1,10 @@
 import streamlit as st
 import os
+from streamlit_autorefresh import st_autorefresh
+st_autorefresh(interval=5000, key="refresh")
+
+# Your existing chat code below will reload and pick up new messages every 5 seconds
+
 
 st.set_page_config(page_title="Two-Person Chat", layout="centered")
 
