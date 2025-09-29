@@ -42,9 +42,9 @@ if "messages" not in st.session_state:
         st.session_state.messages = [line.strip() for line in lines][-50:]
     else:
         st.session_state.messages = []
-    load_chat()
-
-
+    
+    
+load_chat()
 
 
 # Input to type new messages with callback on change
