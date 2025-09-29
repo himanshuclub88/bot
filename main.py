@@ -6,7 +6,7 @@ st.set_page_config(page_title="Two-Person Chat", layout="centered")
 chat_file = "chat_history.txt"
 
 # Callback to add new message
-def laod_chat():
+def load_chat():
     if "messages" not in st.session_state:
         if os.path.exists(chat_file):
             with open(chat_file, "r", encoding="utf-8") as f:
