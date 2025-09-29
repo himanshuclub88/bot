@@ -41,4 +41,4 @@ if user_input:
             f.write(msg + "\n")
 
     # Rerun to update interface instantly with new message
-    st.experimental_rerun()
+    st.rerun()
